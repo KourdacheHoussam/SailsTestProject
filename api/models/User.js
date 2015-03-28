@@ -63,20 +63,20 @@ module.exports = {
 		},
 		//physical address
 		physical_address:{
-			
-		}
+			model   : 'address'
+		},
 		//User certified ?
 		certified:{
-			type	: 'boolean',
-			columnName : 'certified_user'
+			type		: 'boolean',
+			columnName  : 'certified_user'
 		},
 		//Social Status : student ...
 		social_status:{
-			type	: 'string',
-			columnName : 'socail_status'
+			type	    : 'string',
+			columnName  : 'socail_status'
 		},
 		number_parties:{
-			type 	: 'integer',
+			type 		: 'integer',
 			columnName	: 'number_parties'
 		},
 		//User hobbies
