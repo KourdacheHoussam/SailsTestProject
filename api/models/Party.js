@@ -20,8 +20,9 @@ module.exports = {
 		},
 		//Type de soirée
 		type:{
-			type	:'string',
-			enum	:['Poker', 'Dance', 'Domino'],			
+			type	: 'string',
+			enum	: ['Poker', 'Dansante', 'Domino', 'Belote', 'Jeux de cartes', 'Apéro', 
+					  'Jeux vidéos', 'CineHome', 'Barbecue'],			
 			columnName  : 'party_type'
 		},
 		//Modalité soirée : soirée ouverte, soirée sur confirmation
@@ -71,7 +72,7 @@ module.exports = {
 		place_type :{
 			type        : 'string',
 			required	: false,
-			enum 		: ['studio','studio étudiant', 'appartement', 'maison', 'loft'],
+			enum 		: ['studio','studio étudiant', 'appartement', 'maison', 'loft', 'chateau'],
 			columnName  : 'party_place_type'
 		},
 		//Les commentaire de l'organisateur de la soirée
@@ -81,7 +82,14 @@ module.exports = {
 			required  	: true,
 			columnName	: 'organisator_comments'
 		},
-		
-
+		//La liste des participants
+		list_participants : {
+			collection    : 'user',
+			via           : 'belong_parties'
+		},
+		//List of notices: persons who want give his notice about the party
+		list_notices	:{
+			collection 	  : 'notice'
+		}
 	}
 };

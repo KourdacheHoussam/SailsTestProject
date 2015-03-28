@@ -90,6 +90,11 @@ module.exports = {
 			collection	: 'picture',
 			via         : 'pic_owner',
 			columnName	: 'user_pictures'
+		},
+		// un utilisateur peut participer à plusieurs soirées
+		belong_parties :{
+			collection : 'party',
+			via : 'list_participants'
 		}
 	}
 
