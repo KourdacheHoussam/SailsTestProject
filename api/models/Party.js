@@ -26,25 +26,62 @@ module.exports = {
 		},
 		//Modalité soirée : soirée ouverte, soirée sur confirmation
 		party_modality:{
-			type    :'string',
-			enum 	:['Open', 'With-Confirmation'],	
-			required :true ,		
+			type    	:'string',
+			enum 		: ['Open', 'With-Confirmation'],	
+			required 	: true ,		
 			columnName  : 'party_modality'
 		},
 		//The address of the party
 		party_address:{
-			model : 'address'
+			model 		:'address',
+			required	: true,
+			columnName  : 'address_party'
 		},
 		//Le nombre minimum de participants
 		minimal_participants:{
-			type 	 :'integer',
-			required : true
+			type 	 	:'integer',
+			required 	: true,
+			columnName  : 'mini_participants'
 		},
 		//Le nombre maximal de participants
 		maximal_participants:{
-			type     : 'integer',
-			required : true
-		}
+			type     	: 'integer',
+			required 	: true,
+			columnName  : 'maxi_participants'
+		},
+		//Ce que doivent apporter les gens à la soirée
+		gifts:{
+			type 		: 'string',
+			size        : 120,		
+			columnName  : 'party_gifts'
+		},
+		// Date and time party start
+		datetime_start :{
+			type  		: 'datetime',
+			required 	: true,
+			columnName  : 'datetime_start'
+		},
+		// Date and time party end
+		datetime_end :{
+			type 		: 'datetime',
+			required	: true,
+			columnName  : 'datetime_end'
+		},
+		// party type of place
+		place_type :{
+			type        : 'string',
+			required	: false,
+			enum 		: ['studio','studio étudiant', 'appartement', 'maison', 'loft'],
+			columnName  : 'party_place_type'
+		},
+		//Les commentaire de l'organisateur de la soirée
+		organisator_comments: {
+			type 		: 'string',
+			size 		: 240,
+			required  	: true,
+			columnName	: 'organisator_comments'
+		},
+		
+
 	}
 };
-
