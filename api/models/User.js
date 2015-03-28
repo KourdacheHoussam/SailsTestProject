@@ -77,9 +77,11 @@ module.exports = {
 			via         : 'owner',
 			columnName  : 'user_hobbies'
 		},
-		//
+		// the list of user picture
 		pictures:{
-			
+			collection	: 'picture',
+			via         : 'pic_owner',
+			columnName	: 'user_pictures'
 		}
 	}
 
