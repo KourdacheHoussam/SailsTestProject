@@ -11,14 +11,14 @@ module.exports = {
 	tableName : 'notices',
 	//La liste des attributs
 	attributes: {
+		//The id of the notice(avis)
 		nui:{
 			type	: 'integer',
 			unique  : true,
 			primaryKey  : true,
 			required    : true,
 			columnName : 'ntc_primary_k'
-		},
-		
+		}	
 	}
 };
 

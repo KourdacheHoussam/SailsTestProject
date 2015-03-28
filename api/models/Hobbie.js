@@ -30,6 +30,11 @@ module.exports = {
 			size	: 120,
 			columnName	: 'hobbie_description'
 		},
+		// User can select his hobbies whithin this enumeration
+		hobbies_enum:{
+			type	: 'string',
+			enum    : ['football', 'basket', 'peinture', 'musique', 'jeux de cartes', 'ski', 'faire la fête']
+		},
 		// A hobbie belong to a user
 		owner:{
 			model   : 'user'
