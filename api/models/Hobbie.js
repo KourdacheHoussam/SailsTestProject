@@ -33,7 +33,10 @@ module.exports = {
 		// User can select his hobbies whithin this enumeration
 		hobbies_enum:{
 			type	: 'string',
-			enum    : ['football', 'basket', 'peinture', 'musique', 'jeux de cartes', 'ski', 'faire la fête']
+			enum    : ['Football', 'Basket Ball', 'Dance', 'Musique', 'Jeux de cartes', 
+			'Photographie', 'Ski', 'Cuisine', 'Jeux Vidéos', 'Musculation', 'Jeux Musicaux', 'Lecture', 'Dessin',
+			'Tennis Table', 'Graffiti', 'Chasse', 'Jogging', 'Paintball', 'Rugby', 'Shopping', 'La nage', 'Skateboarding',
+			'Badminton', 'Vélo','Blogging', 'Bowling', 'Jeux échecs', 'Théatre', 'Kayak', 'Arts martiaux', 'Tennis','Cinéma', 'Geeking']
 		},
 		// A hobbie belong to a user
 		owner:{

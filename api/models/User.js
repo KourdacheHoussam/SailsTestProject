@@ -28,19 +28,19 @@ module.exports = {
 			columnName  : 'u_primary_k'
 		},
 		//Username
-		userName:{
+		user_name:{
 			type	: 'string',
 			unique	: true,
 			columnName : 'username'
 		},
 		//Firstname
-		firstName:{
+		first_name:{
 			type	: 'string',
 			size	: 25,
 			columnName : 'firstname'
 		},
 		//Lastname
-		lastName:{
+		last_name:{
 			type	: 'string',
 			size	: 25,
 			columnName : 'lastname'
@@ -51,12 +51,12 @@ module.exports = {
 			columnName : 'encrypt_password'
 		},
 		//birthDay
-		birthDay:{
+		birth_day:{
 			type	: 'date',
 			columnName :'birthday'
 		},
 		//Address Mail
-		addressMail:{
+		address_mail:{
 			type	: 'email',
 			unique	: true,
 			columnName : 'address_mail'
@@ -67,9 +67,13 @@ module.exports = {
 			columnName : 'certified_user'
 		},
 		//Social Status : student ...
-		socialStatus:{
+		social_status:{
 			type	: 'string',
 			columnName : 'socail_status'
+		},
+		number_parties:{
+			type 	: 'integer',
+			columnName	: 'number_parties'
 		},
 		//User hobbies
 		hobbies:{
