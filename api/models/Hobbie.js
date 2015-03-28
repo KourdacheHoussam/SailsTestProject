@@ -23,6 +23,11 @@ module.exports = {
 			size	: 25,
 			columnName : 'hobbie_name'
 		},
+		description:{
+			type	: 'string',
+			size	: 120,
+			columnName	: 'hobbie_description'
+		},
 		owner:{
 			model   : 'user'
 		}

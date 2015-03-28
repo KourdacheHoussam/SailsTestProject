@@ -76,6 +76,10 @@ module.exports = {
 			collection	: 'hobbie',
 			via         : 'owner',
 			columnName  : 'user_hobbies'
+		},
+		//
+		pictures:{
+			
 		}
 	}
 
