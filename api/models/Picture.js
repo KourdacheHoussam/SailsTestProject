@@ -25,13 +25,13 @@ module.exports = {
 			columnName	: 'pic_description'
 		},
 		//The relative address of the picture
-		pic_address:{
+		pic_uri:{
 			type		: 'string',
 			required	: true,
 			columnName	: 'pic_address'
 		},
 		//A picture belong to a defined user id
-		owner:{
+		pic_owner:{
 			model       : 'user'
 		}
 	}
