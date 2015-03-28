@@ -56,11 +56,15 @@ module.exports = {
 			columnName :'birthday'
 		},
 		//Address Mail
-		address_mail:{
+		mail_address:{
 			type	: 'email',
 			unique	: true,
 			columnName : 'address_mail'
 		},
+		//physical address
+		physical_address:{
+			
+		}
 		//User certified ?
 		certified:{
 			type	: 'boolean',
